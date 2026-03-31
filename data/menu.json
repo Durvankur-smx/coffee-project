@@ -1,0 +1,8 @@
+[
+  { "name": "Latte", "category": "Drinks", "price": 50, "image": "/images/Latte.jpg" },
+  { "name": "Cappuccino", "category": "Drinks", "price": 90, "image": "/images/Cappuccino.jpg" },
+  { "name": "Espresso", "category": "Drinks", "price": 60, "image": "/images/Espresso.jpg" },
+  { "name": "Mocha", "category": "Drinks", "price": 100, "image": "/images/Mocha.jpg" },
+  { "name": "Croissant", "category": "Pastries", "price": 50, "image": "/images/Croissant.jpg" },
+  { "name": "Muffin", "category": "Pastries", "price": 90, "image": "/images/Muffin.jpg" }
+]

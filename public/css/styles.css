@@ -1,0 +1,305 @@
+/* ======================================================
+   GLOBAL VARIABLES
+====================================================== */
+:root {
+  --primary-color: #6D4C41;
+  --secondary-color: #8D6E63;
+  --text-color: #3E2723;
+  --background-color: #F5F5F5;
+}
+
+/* ======================================================
+   RESET & BASE
+====================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background 0.4s ease, color 0.4s ease;
+  line-height: 1.6;
+
+  /* ⭐ Sticky footer layout */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======================================================
+   PARTICLES BACKGROUND
+====================================================== */
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.35;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px 20px 22px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin: 8px 0 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 12px 16px;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+nav a.active {
+  background: rgba(255,255,255,0.22);
+}
+
+/* NAV BUTTONS */
+#darkModeToggle,
+#themeToggleBtn {
+  background: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#darkModeToggle:hover,
+#themeToggleBtn:hover {
+  transform: translateY(-1px);
+  background: #f3f3f3;
+}
+
+/* ======================================================
+   MAIN CONTAINER — FLEX GROW FOR FOOTER FIX
+====================================================== */
+main.container {
+  flex: 1;                     /* ⭐ critical */
+  max-width: 1100px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* ======================================================
+   HOME INTRO CARD
+====================================================== */
+.intro {
+  background: rgba(255,255,255,0.92);
+  padding: 48px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.intro h2 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+/* ======================================================
+   MENU PAGE
+====================================================== */
+.search-filter {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-filter input,
+.search-filter select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+/* MENU CARD */
+.menu-item {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-item button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ======================================================
+   CART
+====================================================== */
+.cart-section {
+  margin-top: 40px;
+}
+
+#cartItems {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* ======================================================
+   CONTACT PAGE FORM POLISH
+====================================================== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 9px 14px;
+  border-radius: 6px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ======================================================
+   LOGIN PAGE
+====================================================== */
+.login-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255,255,255,0.95);
+  padding: 26px;
+  width: 340px;
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+.login-card input {
+  width: 100%;
+  padding: 11px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #8d6e63;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 11px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ======================================================
+   FOOTER — STICKY SAFE
+====================================================== */
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+
+  margin-top: auto;   /* ⭐ footer always bottom */
+}
+
+/* ======================================================
+   DARK MODE
+====================================================== */
+.dark-mode {
+  --primary-color: #1e1e1e;
+  --secondary-color: #2b2b2b;
+  --text-color: #eeeeee;
+  --background-color: #111111;
+}
+
+.dark-mode .intro,
+.dark-mode .menu-item,
+.dark-mode #cartItems,
+.dark-mode .login-card {
+  background: #2a2a2a;
+  color: white;
+}

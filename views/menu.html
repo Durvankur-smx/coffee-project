@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bliss - Menu</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- JS -->
+  <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <header data-aos="fade-down">
+    <h1>Our Menu</h1>
+  </header>
+
+  <nav>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+  <button id="themeToggleBtn">Toggle Theme</button>
+
+  <a href="/">Home</a>
+  <a href="/menu">Menu</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+
+</nav>
+
+
+  <main class="container" data-aos="fade-up">
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search menu..." />
+      <select id="filterCategory">
+        <option value="all">All</option>
+        <option value="Drinks">Drinks</option>
+        <option value="Pastries">Pastries</option>
+        <option value="Snacks">Snacks</option>
+      </select>
+    </div>
+
+    <div id="menuGrid" class="menu-grid"></div>
+
+    <section class="cart-section">
+      <h2>🛒 Your Cart</h2>
+      <div id="cartItems"></div>
+      <p>Total: <span id="cartTotal">0</span> rs</p>
+      <button id="checkoutBtn">Checkout</button>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Brew & Bliss. All rights reserved.</p>
+  </footer>
+
+  <!-- External -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

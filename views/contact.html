@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop - Contact</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- JS -->
+  <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <header data-aos="fade-down">
+    <h1>Contact Us</h1>
+  </header>
+
+ <nav>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+  <button id="themeToggleBtn">Toggle Theme</button>
+
+  <a href="/">Home</a>
+  <a href="/menu">Menu</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+
+</nav>
+
+
+  <main class="container" data-aos="fade-up">
+    <div class="contact-container">
+
+      <div class="contact-info" data-aos="fade-right">
+        <h2>Visit Us</h2>
+        <p>📍 123 Coffee Lane, Brew City, BC 12345</p>
+
+        <h2>Opening Hours</h2>
+        <p>⏰ Mon–Fri: 7 AM – 7 PM</p>
+        <p>⏰ Sat–Sun: 8 AM – 6 PM</p>
+      </div>
+
+      <div class="contact-form" data-aos="fade-left">
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        </form>
+        <p id="contactStatus"></p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Brew & Bliss. All rights reserved.</p>
+  </footer>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
